@@ -1,12 +1,1 @@
-## To Do:
-
-#### Frontend
-* Home  - ✅
-* About - ✅ 
-* Login - ✅
-
-#### Backend
-* Dashboard - ✅
-* Posts - CRUD - ✅
-* Image upload - CRUD - ✅
-
+Created my own Content Management System as part of a school project ![https://cdn1.iconfinder.com/data/icons/internet-marketing-orchid-vol-1/256/CMS_Content_Management_System-512.png]
