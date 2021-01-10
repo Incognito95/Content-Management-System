@@ -1,0 +1,24 @@
+<%- include ./partials/sidebar %>
+
+<div class="container">
+    <form method="post" action="/create-user">
+        <div class="alert "><%= typeof messages !== "undefined" && typeof messages.info !== "undefined" ? messages.info : "" %></div>
+        <fieldset>
+            <label for="">User Name</label>
+            <input type="text" class="form-control" name="user_name">
+        </fieldset>
+        <fieldset>
+            <label for="">First Name</label>
+            <input type="text" class="form-control" name="first_name">
+        </fieldset>
+        <fieldset>
+            <label for="">Last Name</label>
+            <input type="text" class="form-control" name="last_name">
+        </fieldset>
+        <fieldset>
+            <label for="">Email</label>
+            <input type="text" class="form-control" name="email">
+        </fieldset>
+        <button type="submit" class="btn btn-success btn-save">Create</button>
+    </form>
+</div>

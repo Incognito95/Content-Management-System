@@ -1,0 +1,15 @@
+<%- include ./partials/sidebar %>
+
+<div class="container">
+    <h3>Edit: <%= result.image_name %></h3>
+    <form method="post">
+        <div class="inputGroup">
+            <fieldset>
+                <img src="/uploads/<%= result.image_name %>" width="350" class="edit-image">
+            </fieldset>
+            <label>Choose a file</label>
+            <input type="file" name="image_name" multiple>
+        </div>
+        <button type="submit" class="btn btn-primary upload-btn">Upload</button>
+    </form>
+</div>

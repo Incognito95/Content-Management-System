@@ -1,0 +1,18 @@
+<%- include('./partials/header') %>
+
+<div class="container">
+    <form method="post" action="/login">
+        <h3>Login</h3>
+        <span style="color: red"><%= typeof messages != "undefined" && typeof messages.error !== undefined ? messages.error : "" %></span>
+        <div class="control-group">
+            <label class="control-label" for="username">Username</label>
+                <input type="text" name="username" placeholder="enter your username..." class="form-control" required>
+        </div>
+            <label class="control-label" for="password">Password</label>
+            <div class="controls">
+                <input type="password" name="password" class="form-control" placeholder="enter your password..." required>
+            </div>
+            <button type="submit" class="btn btn-primary  pull-right btn-save">Save</button>
+        </div>
+    </form>
+</div>

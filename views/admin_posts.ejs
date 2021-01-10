@@ -1,0 +1,18 @@
+<%- include ./partials/sidebar %>
+
+<div class="container">
+    <a href="/create_post" class="btn btn-success btn-create">Create Post</a>
+    <h3 class="posts-header">Posts</h3>
+    <hr>
+    <span style="color: green"><%= typeof messages !== "undefined" && typeof messages.info !== "undefined" ? messages.info : "" %></span>
+    <% results.forEach(result => { %>
+    <div class="well">
+     <strong>Author:</strong> <%= result.author %>
+     <br><strong>Title:</strong> <%= result.title %>
+     <br><strong>Description:</strong> <br><%- result.description %>
+     <br><strong>Date:</strong> <%= result.date %>
+     <br><br><a href="/edit/<%= result.id %>" class="btn btn-info">Edit</a>
+     <a href="/delete/<%= result.id %>" class="btn btn-danger">Delete</a>
+    </div>
+    <% }) %>
+  </div>

@@ -1,0 +1,26 @@
+<%- include ./partials/sidebar %>
+
+
+
+<div class="container">
+    <h3>List of images</h3>
+    <hr>
+     <span style="color: green"><%= typeof messages !== "undefined" && typeof messages.info !== "undefined" ? messages.info : "" %></span>
+    <table class="table table-bordered">
+        <tr>
+            <th>Filename</th>
+            <th>Preview</th>
+            <th>Actions</th>
+        </tr>
+        <% results.forEach(result => { %>
+        <tr>
+            <td><%= result.image_name %></td>
+            <td><img src="/uploads/<%= result.image_name %>" width="60"></td>
+            <td>
+                <a href="/edit-image/<%= result.id %>" class="btn btn-info">Edit</a>
+                <a href="/delete-image/<%= result.id %>" class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+        <% }) %>
+    </table>
+</div>

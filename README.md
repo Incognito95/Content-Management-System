@@ -1,2 +1,12 @@
-# Content-Management-System
-I created my own Content Management System as part of a school project
+## To Do:
+
+#### Frontend
+* Home  - ✅
+* About - ✅ 
+* Login - ✅
+
+#### Backend
+* Dashboard - ✅
+* Posts - CRUD - ✅
+* Image upload - CRUD - ✅
+

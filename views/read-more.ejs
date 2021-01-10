@@ -1,0 +1,11 @@
+<%- include ./partials/header %>
+
+
+<div class="container">
+    <img src="/uploads/<%= result.image_name %>" class="read-more-img">
+    <h3 class="posts-header">
+        <p class="date">Date: <%= result.date %></p>
+        Title: <%= result.title %>
+    </h3>
+    <p>Description: <%- result.description %></p>
+</div>

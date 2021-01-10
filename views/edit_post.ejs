@@ -1,0 +1,38 @@
+<%- include ./partials/sidebar %>
+
+<script src="https://cdn.ckeditor.com/ckeditor5/18.0.0/classic/ckeditor.js"></script>
+
+
+<div class="container">
+    <h3>Edit: <%= result.author %></h3>
+    <form method="post">
+        <fieldset>
+            <label for="">Author</label>
+            <input type="text" class="form-control" name="author" value="<%= result.author %>">
+        </fieldset>
+        <fieldset>
+            <label for="">Title</label>
+            <input type="text" class="form-control" name="title" value="<%= result.title %>">
+        </fieldset>
+        <fieldset>
+            <label for="">Description</label>
+            <textarea id="editor" class="form-control" rows="10" name="description"><%= result.description %></textarea>
+        </fieldset>
+        <fieldset>
+            <label for="">Date</label>
+            <input type="text" class="form-control" name="date" value="<%= result.date %>">
+        </fieldset>
+        <button type="submit" class="btn btn-success btn-post pull-right">Post</button>
+    </form>
+</div>
+
+<script>
+    ClassicEditor
+        .create(document.querySelector('#editor'))
+        .then(editor => {
+            console.log(editor);
+        })
+        .catch(error => {
+            console.error(error);
+        });
+</script>

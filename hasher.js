@@ -1,0 +1,1 @@
+console.log(require('bcryptjs').hashSync('1234', 10));

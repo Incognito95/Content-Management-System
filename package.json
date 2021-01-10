@@ -1,0 +1,29 @@
+{
+  "name": "project-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server",
+    "jsdoc": "jsdoc ./controllers ./routes ./models ./services"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^8.0.0",
+    "ejs": "^2.6.2",
+    "express-flash": "0.0.2",
+    "express-formidable": "^1.2.0",
+    "express-log-errors": "^2.1.1",
+    "express-session": "^1.16.2",
+    "fs": "0.0.1-security",
+    "morgan": "^1.9.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}

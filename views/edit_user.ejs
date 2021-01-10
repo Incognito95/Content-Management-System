@@ -1,0 +1,24 @@
+<%- include ./partials/sidebar %>
+
+<div class="container">
+    <h3>Edit: <%= result.user_name %></h3>
+    <form method="post">
+        <fieldset>
+            <label for="">User Name</label>
+            <input type="text" class="form-control" name="user_name" value="<%= result.user_name %>">
+        </fieldset>
+        <fieldset>
+            <label for="">First Name</label>
+            <input type="text" class="form-control" name="first_name" value="<%= result.first_name %>">
+        </fieldset>
+        <fieldset>
+            <label for="">Last Name</label>
+            <input type="text" class="form-control" name="last_name" value="<%= result.last_name %>">
+        </fieldset>
+        <fieldset>
+            <label for="">Email</label>
+            <input type="text" class="form-control" name="email" value="<%= result.email %>">
+        </fieldset>
+        <button type="submit" class="btn btn-success btn-save">Save</button>
+    </form>
+</div>

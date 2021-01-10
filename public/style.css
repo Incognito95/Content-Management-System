@@ -1,0 +1,68 @@
+#wallpaper {
+  background-image: url(/images/wallpaper.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.cms-video {
+  margin-top: -40px;
+  width: 450px;
+}
+
+.btn-save,
+label {
+  margin-top: 20px;
+}
+
+/* Error 404
+==================================================*/
+.img-container {
+  background-image: url(/images/404-error.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 500px;
+  /* This is background-image height */
+}
+
+.error-text {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.error-btn {
+  padding: 1.2rem 3rem;
+  margin: 30px 520px;
+  background: #04cba0;
+  border: none;
+}
+
+.error-btn:hover {
+  background: #04cba0;
+}
+
+
+/* Posts
+==================================================*/
+.date {
+  font-size: 15px;
+}
+
+.read-more-btn {
+  background: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.read-more-btn:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.post-img, .read-more-img {
+  width: 20%;
+}

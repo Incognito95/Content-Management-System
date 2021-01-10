@@ -1,0 +1,10 @@
+<%- include('./partials/header') %>
+
+
+
+<div class="container">
+    <h3>About</h3>
+    <% results.forEach(result => { %>
+    <%- result.about_description %>
+    <% }) %>
+</div>

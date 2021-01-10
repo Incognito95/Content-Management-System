@@ -1,0 +1,14 @@
+<%- include ./partials/sidebar %>
+
+<div class="container">
+    <h3>Image Upload</h3>
+    <hr>
+    <form action="/admin/image_upload" method="post" enctype="multipart/form-data">
+        <div class="inputGroup">
+            <label for="">Choose a file</label>
+            <input type="file" name="image" id="image" multiple>
+        </div>
+        <button type="submit" class="btn btn-primary upload-btn">Upload</button>
+        <a href="/list-images" class="btn btn-success list-btn">List of images</a>
+    </form>
+</div>

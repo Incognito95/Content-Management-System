@@ -1,0 +1,29 @@
+<%- include ./partials/sidebar %>
+
+<div class="container">
+    <a href="/create-user" class="btn btn-success create-btn">Create User</a>
+    <h3>Users</h3>
+    <hr>
+    <span style="color: green"><%= typeof messages !== "undefined" && typeof messages.info !== "undefined" ? messages.info : "" %></span>
+    <table class="table table-bordered">
+        <tr>
+            <th>User Name</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Actions</th>
+        </tr>
+        <% results.forEach(result => { %>
+        <tr>
+            <td><%= result.user_name %></td>
+            <td><%= result.first_name %></td>
+            <td><%= result.last_name %></td>
+            <td><%= result.email %></td>
+            <td>
+                <a href="/edit-user/<%= result.id %>" class="btn btn-info"><img src="/images/pencil.png"></a>
+                <a href="/delete-user/<%= result.id %>" class="btn btn-danger"><img src="/images/trash.png"width="20"></a>
+            </td>
+        </tr>
+        <% }) %>
+    </table>
+</div>

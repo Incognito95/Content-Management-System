@@ -1,0 +1,14 @@
+<%- include ./partials/header %>
+
+<% results.forEach(result => { %>
+<div class="container">
+    <img src="/uploads/<%= result.image_name %>" class="post-img">
+    <h3 class="posts-header">
+        <p class="date"><%= result.date %></p>
+        <%= result.title %>
+    </h3>
+    <p><%- result.description %></p>
+    <a href="/read-more/<%= result.id %>" class="btn btn-primary read-more-btn">Read More</a>
+    <hr>
+</div>
+<% }) %>
