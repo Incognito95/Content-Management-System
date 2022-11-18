@@ -11,6 +11,8 @@ label {
     line-height: 2rem;
 }
 
-.card {
-    display: inline-block;
+.jumbotron {
+    background: black;
+    height: 310px;
+    border-radius: 0;
 }
