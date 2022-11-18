@@ -1,0 +1,46 @@
+<%- include ./partials/sidebar-left %>
+
+<div class="container pt-5">
+    <h3>Add New Post</h3>
+    <hr>
+    <div style="color: green"><%= typeof messages !== "undefined" && typeof messages.info !== "undefined" ? messages.info : "" %></div>
+    <form action="/create-post" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <label for="">Title</label>
+            <input type="text" name="title" class="form-control">
+        </fieldset>
+        <fieldset>
+            <label for="">Author</label>
+            <input type="text" name="author" class="form-control">
+        </fieldset>
+        <fieldset>
+            <label for="">Date</label>
+            <input type="date" name="date" class="form-control">
+        </fieldset>
+        <fieldset>
+            <label for="uploadfield">Upload Image</label>
+            <input type="file" name="images" id="uploadfield">
+            <button type="submit" class="btn btn-primary">Upload</button>
+        </fieldset>
+        <fieldset>
+            <label for="">Text</label>
+            <textarea name="text" id="" cols="30" rows="10" class="form-control"></textarea>
+        </fieldset>
+        <button type="submit" class="btn btn-success create-btn float-right form-createSnippet">Save</button>
+    </form>
+</div>
+
+
+<template id="snippet">
+    <div class="snippet">
+      <h3 class="snippet-title"></h3>
+      <div class="snippet-content"></div>
+    </div>
+</template>
+
+<!-- Load Uppy JS bundle. -->
+<script src="/js/image-upload.js"></script>
+<script src="https://releases.transloadit.com/uppy/v3.3.1/uppy.min.js" type="module"></script>
+<script src="https://releases.transloadit.com/uppy/v3.3.1/uppy.legacy.min.js" nomodule></script>
+<script src="https://releases.transloadit.com/uppy/locales/v3.0.4/ru_RU.min.js"></script>
+<script>

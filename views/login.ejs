@@ -1,0 +1,11 @@
+<%- include ./partials/header %>
+
+<form action="/login" method="POST" class="container mt-5 form-signin">
+    <h1 class="mb-3 text-center login-header">Login</h1>
+    <label for="">Username</label>
+    <input type="text" name="username" class="form-control" required>
+    <label for="">Password</label>
+    <input type="password" name="password" class="form-control" required>
+    <button class="btn btn-primary float-right mt-3" type="submit">Login</button>
+    <span style="color: red;"><%= typeof messages !== "undefined" && typeof messages.error !== "undefined" ? messages.error : "" %></span>
+</form>

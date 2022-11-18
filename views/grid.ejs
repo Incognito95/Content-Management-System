@@ -1,0 +1,16 @@
+<%- include ./partials/header %>
+<%- include ./partials/sidebar %>
+
+<div class="container">
+    <% results.forEach(result => { %>
+    <div class="card" style="width: 18rem;">
+        <img src="<%= result.images %>" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title"><%= result.username %></h5>
+            <p class="card-text"><%= result.description %></p>
+            <a href="<%= result.portfolio %>" target="_blank" class="btn btn-primary">Portfolio</a>
+        </div>
+    </div>
+    <% }) %>
+</div>
+<!---end of container--->

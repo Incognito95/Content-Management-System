@@ -1,0 +1,34 @@
+<%- include ./partials/sidebar-left %>
+
+<div class="container pt-5">
+    <h3>Edit: <%= result.title %></h3>
+    <hr>
+    <div style="color: green"><%= typeof messages !== "undefined" && typeof messages.info !== "undefined" ? messages.info : "" %></div>
+    <form method="post" enctype="multipart/form-data">
+        <fieldset>
+            <label for="">Title</label>
+            <input type="text" name="title" class="form-control" value="<%= result.title %>">
+        </fieldset>
+        <fieldset>
+            <label for="">Author</label>
+            <input type="text" name="author" class="form-control" value="<%= result.author %>">
+        </fieldset>
+        <fieldset>
+            <label for="">Date</label>
+            <input type="date" name="date" class="form-control" value="<%= result.date %>">
+        </fieldset>
+        <fieldset>
+            <label for="">Upload Image</label>
+            <input type="file" id="image-input" name="images">
+            <div id="display-image" name="images" class="form-control mt-2" value="<%= result.images %>"></div>
+        </fieldset>
+        <fieldset>
+            <label for="">Text</label>
+            <textarea name="text" id="" cols="30" rows="10" class="form-control"><%= result.text %></textarea>
+        </fieldset>
+        <button type="submit" class="btn btn-success create-btn float-right">Save</button>
+    </form>
+</div>
+
+
+<script src="/js/image-upload.js"></script>

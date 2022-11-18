@@ -1,0 +1,16 @@
+#home {
+    background-image: url('/images/wallpaper.jpeg');
+}
+
+label {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.about-paragraph {
+    line-height: 2rem;
+}
+
+.card {
+    display: inline-block;
+}

@@ -1,0 +1,12 @@
+.sidebar-right {
+    background: #eaeaea;
+    padding: 2em;
+    float: right;
+    margin: 40px;
+    width: 15%;
+}
+
+.sidebar-right h3 {
+    font-size: 20px;
+}
+
