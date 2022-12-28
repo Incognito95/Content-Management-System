@@ -16,3 +16,10 @@ label {
     height: 310px;
     border-radius: 0;
 }
+
+
+/*  ------- posts ------- */
+.card {
+    display: inline-block;
+    width: 32%;
+}

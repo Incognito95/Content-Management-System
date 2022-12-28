@@ -19,8 +19,7 @@
         </fieldset>
         <fieldset>
             <label for="uploadfield">Upload Image</label>
-            <input type="file" name="images" id="uploadfield">
-            <button type="submit" class="btn btn-primary">Upload</button>
+            <input type="text" class="form-control" name="images" id="uploadfield">
         </fieldset>
         <fieldset>
             <label for="">Text</label>
@@ -29,18 +28,3 @@
         <button type="submit" class="btn btn-success create-btn float-right form-createSnippet">Save</button>
     </form>
 </div>
-
-
-<template id="snippet">
-    <div class="snippet">
-      <h3 class="snippet-title"></h3>
-      <div class="snippet-content"></div>
-    </div>
-</template>
-
-<!-- Load Uppy JS bundle. -->
-<script src="/js/image-upload.js"></script>
-<script src="https://releases.transloadit.com/uppy/v3.3.1/uppy.min.js" type="module"></script>
-<script src="https://releases.transloadit.com/uppy/v3.3.1/uppy.legacy.min.js" nomodule></script>
-<script src="https://releases.transloadit.com/uppy/locales/v3.0.4/ru_RU.min.js"></script>
-<script>

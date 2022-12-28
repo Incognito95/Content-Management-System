@@ -3,22 +3,35 @@ const fs = require('fs');
 const { nextTick } = require('process');
 
 // frontend
+// read - shows posts
 exports.showPosts = function(req, res) {
-    res.render('posts', {'title': 'Posts'});
+    db.query('SELECT * FROM posts', function (err, results) {
+        if (err) {
+            throw err;
+        } else {
+            res.render('posts', {'title': 'Posts', results });
+        }
+    })
 }
 
+exports.postDetail = function(req, res) {
+    db.query('SELECT * FROM posts WHERE id = ?', [req.params.id], function (err, results) {
+        if (err) {
+            throw err;
+        } else {
+            res.render('post-detail', {'title': 'Posts', result:results[0] });
+        }
+    })
+}
+
+// backend
 // read - show post form
 exports.showPostForm = function(req, res) {
     res.render('create-post', { 'title' : 'Create Post'});
 }
 
 // create - create post
-exports.createPost = async function (req, res) {
-    // if none of them exist - their was no file that came with the form
-    if (!req.files || !req.files.images) {
-        return next(new Error('No file exists!'));
-    }
-
+exports.createPost = function (req, res) {
     db.query('INSERT INTO posts SET title = ?, author = ?, date = ?, images = ?, text = ?', [req.fields.title, req.fields.author, req.fields.date, req.fields.images, req.fields.text], function (err, result) {
         if (err) {
             throw err;

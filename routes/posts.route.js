@@ -1,4 +1,4 @@
-const { showPosts, showAdminPosts, showPostForm, createPost, deletePost, editPost, updatePost } = require('../controllers/posts.controller');
+const { showPosts, showAdminPosts, showPostForm, createPost, deletePost, editPost, updatePost, postDetail } = require('../controllers/posts.controller');
 
 module.exports = function(app) {
     app.get('/admin/posts', showAdminPosts)
@@ -8,4 +8,5 @@ module.exports = function(app) {
     app.post('/create-post', createPost);
     app.get('/delete-post/:id', deletePost);
     app.post('/edit-post/:id', updatePost);
+    app.get('/post-detail/:id', postDetail);
 }

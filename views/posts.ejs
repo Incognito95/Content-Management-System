@@ -1,2 +1,18 @@
 <%- include ./partials/header %>
 
+
+
+<div class="container mt-5">
+    <h3>Posts</h3>
+    <% results.forEach(result => { %>
+    <div class="card mt-3">
+        <img src="<%= result.images %>" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title"><%= result.title %></h5>
+            <p class="text-muted"><%= result.date %></p>
+            <p class="card-text"><%= result.text %></p>
+            <a href="/post-detail/<%= result.id %>" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+    <% }) %>
+</div>

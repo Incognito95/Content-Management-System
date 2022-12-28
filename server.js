@@ -21,6 +21,9 @@ require('./routes/dashboard.route')(app);
 require('./routes/posts.route')(app);
 require('./routes/login.route')(app);
 
+// ! body-parser deprecated
+// use of bodyParser - app.use(bodyParser.json());
+
 
 
 // 404 Error
