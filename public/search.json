@@ -1,0 +1,77 @@
+[
+  {
+    "objectID": "home-1",
+    "page": "Homepage",
+    "title": "Content Management System",
+    "content": "A simple CMS built with Node.js, Express and EJS — focused on clarity and speed. Built for speed and clarity. Customize quickly and deploy with confidence."
+  },
+  {
+    "objectID": "home-2",
+    "page": "Homepage",
+    "title": "Easy Content Creation",
+    "content": "CMS Interface",
+    "image": "https://getbootstrap.com/docs/5.3/examples/features/unsplash-photo-1.jpg"
+  },
+  {
+    "objectID": "home-3",
+    "page": "Homepage",
+    "title": "Customizable Pages",
+    "content": "Flexible Layouts",
+    "image": "https://getbootstrap.com/docs/5.3/examples/features/unsplash-photo-2.jpg"
+  },
+  {
+    "objectID": "home-4",
+    "page": "Homepage",
+    "title": "Developer‑Friendly",
+    "content": "Built With Express & EJS",
+    "image": "https://getbootstrap.com/docs/5.3/examples/features/unsplash-photo-3.jpg"
+  },
+  {
+    "objectID": "about-1",
+    "page": "About",
+    "title": "About My CMS",
+    "content": "Welcome to My CMS, a lightweight content management system designed for simplicity, speed, and complete control. Built with Express and EJS, our CMS allows you to manage content efficiently without unnecessary complexity. Whether you’re running a small project, an internal dashboard, or just exploring web development, this system gives you a solid foundation to organize and present your content."
+  },
+  {
+    "objectID": "about-2",
+    "page": "About",
+    "title": "Simplicity",
+    "content": "Intuitive navigation and clean design for a smooth user experience."
+  },
+  {
+    "objectID": "about-3",
+    "page": "About",
+    "title": "Customization",
+    "content": "Easy to adapt to your unique workflow or branding."
+  },
+  {
+    "objectID": "about-4",
+    "page": "About",
+    "title": "Learning",
+    "content": "Perfect for developers who want to understand how a CMS works from the ground up."
+  },
+  {
+    "objectID": "contact-1",
+    "page": "Contact",
+    "title": "Get in touch",
+    "content": "Have a question or want to collaborate? Send us a message and we'll respond shortly."
+  },
+  {
+    "objectID": "contact-2",
+    "page": "Contact",
+    "title": "Contact Form",
+    "content": "Form fields: Name, Email, Message. Users can submit questions or messages via the form."
+  },
+  {
+    "objectID": "contact-3",
+    "page": "Contact",
+    "title": "Contact Info",
+    "content": "Email: hello@example.com. Phone: (555) 123-4567. Address: 123 Example St., City, State ZIP"
+  },
+  {
+    "objectID": "contact-4",
+    "page": "Contact",
+    "title": "Map",
+    "content": "Map placeholder showing the location of the company or office."
+  }
+]

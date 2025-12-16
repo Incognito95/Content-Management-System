@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
@@ -28,6 +29,12 @@ app.use(flash());
 // make login state available to all views from session
 app.use((req, res, next) => {
     res.locals.loggedIn = !!req.session.loggedIn;
+    res.locals.dashboardPage = false; // default to false; dashboard will set it to true
+    next();
+});
+
+app.use((req, res, next) => {
+    res.locals.isLoggedIn = !!req.session.user; // true if user session exists
     next();
 });
 
@@ -62,13 +69,14 @@ app.get('/', (req, res) => {
 // simple auth middleware
 function isAuthenticated(req, res, next) {
     if (req.session && req.session.loggedIn) return next();
-    req.flash('error', 'Please log in to view the page.');
+    req.flash('error', 'Please login to view the page.');
     return res.redirect('/login');
 }
 
+
 // show dashboard page (protected)
 app.get('/dashboard', isAuthenticated, (req, res) => {
-    res.render('dashboard', { title: 'Dashboard' });
+    res.render('dashboard', { title: 'Dashboard', dashboardPage: true });
 });
 
 // show sidebar
@@ -88,6 +96,35 @@ app.get('/about', (req, res) => {
 // about page
 app.get('/about', (req, res) => {
     res.render('about', { title: 'About' });
+});
+
+// signup page
+app.get('/signup', (req, res) => {
+    res.render('signup', { message: req.flash('error'), title: 'Sign Up' });
+});
+
+// Handle signup form submission
+app.post('/signup', (req, res) => {
+    const users = [];
+    const { username, password } = req.body;
+
+    // Basic validation
+    if (!username || !password) {
+        req.flash('error', 'Please enter both username and password.');
+        return res.redirect('/signup');
+    }
+
+    // Check if user already exists
+    const existingUser = users.find(user => user.username === username);
+    if (existingUser) {
+        req.flash('error', 'This user already exists.');
+        return res.redirect('/signup');
+    }
+
+    // If not, create the user
+    users.push({ username, password });
+    req.flash('success', 'Account created successfully!');
+    res.redirect('/login');
 });
 
 // login page
