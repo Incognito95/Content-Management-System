@@ -12,8 +12,6 @@ Welcome to **My CMS**, a minimalist content management system designed for simpl
 
 With **Express** and **EJS**, My CMS provides a fast and intuitive way to manage and display your content without unnecessary bloat. Its lightweight architecture ensures minimal setup, straightforward customization, and rapid deployment.
 
----
-
 ## Features
 
 - **Simplicity**  
@@ -47,11 +45,9 @@ Optional dependencies for future features:
 ---
 
 ## Installation
+git clone https://github.com/yourusername/my-cms.git
+cd my-cms
 
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/yourusername/my-cms.git
-   cd my-cms
 
 ## Folder Structure
 ```
