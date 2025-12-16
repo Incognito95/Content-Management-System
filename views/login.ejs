@@ -1,0 +1,28 @@
+<%- include('./partials/header') %>
+
+
+    <main class="container">
+        <div class="mx-auto" style="max-width:480px;margin-top:3.5rem;">
+            <div class="card p-4">
+                <h2 style="margin-bottom:0.75rem;">Sign in</h2>
+                <% if (message && message.length> 0) { %>
+                    <div class="alert alert-danger" role="alert">
+                        <%= message %>
+                    </div>
+                    <% } %>
+                        <form method="post" action="/login">
+                            <div class="mb-3">
+                                <label class="form-label">Username</label>
+                                <input type="text" name="username" class="form-control" />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Password</label>
+                                <input type="password" name="password" class="form-control" />
+                            </div>
+                            <div class="text-end">
+                                <button type="submit" class="btn btn-primary">Sign in</button>
+                            </div>
+                        </form>
+            </div>
+        </div>
+    </main>
