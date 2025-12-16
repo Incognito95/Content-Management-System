@@ -53,7 +53,8 @@ Optional dependencies for future features:
    git clone https://github.com/yourusername/my-cms.git
    cd my-cms
 
-```my-cms/
+## Folder Structure
+```
 │
 ├─ public/          # Static files (CSS, JS, images)
 ├─ views/           # EJS templates
