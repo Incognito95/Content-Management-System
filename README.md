@@ -55,7 +55,7 @@ npm install
 npm start
 
 │
-├─ public/          🌐 Static files (CSS, JS, images)
+├─ public/          # 🌐 Static files (CSS, JS, images)
 ├─ views/           # 🖼️ EJS templates
 ├─ routes/          # 🛣️ Express route definitions
 ├─ controllers/     # ⚙️ Route logic
