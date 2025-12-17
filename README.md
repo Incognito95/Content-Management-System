@@ -57,12 +57,12 @@ npm start
 ## 🗂️ Folder Structure
 ```
 │
-├─ public/          # 🌐 Static files (CSS, JS, images)
-├─ views/           # 🖼️ EJS templates
-├─ routes/          # 🛣️ Express route definitions
-├─ controllers/     # ⚙️ Route logic
-├─ models/          # 🗄️ Database models (if using a database)
-├─ app.js           # 🚪 Entry point
-├─ package.json     # 📦 Dependencies and scripts
-└─ README.md        # 📖 Project documentation
+├─ public/          🌐 Static files (CSS, JS, images)
+├─ views/           🖼️ EJS templates
+├─ routes/          🛣️ Express route definitions
+├─ controllers/     ⚙️ Route logic
+├─ models/          🗄️ Database models (if using a database)
+├─ app.js           🚪 Entry point
+├─ package.json     📦 Dependencies and scripts
+└─ README.md        📖 Project documentation
 ```
