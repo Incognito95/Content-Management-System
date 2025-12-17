@@ -54,7 +54,7 @@ npm install
 npm start
 ```
 
-## Folder Structure
+## 🗂️ Folder Structure
 ```
 │
 ├─ public/          # 🌐 Static files (CSS, JS, images)
