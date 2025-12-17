@@ -47,14 +47,15 @@ Optional dependencies for future features:
 ---
 
 ## 🚀 Installation
-
 ```bash
 git clone https://github.com/yourusername/my-cms.git
 cd my-cms
 npm install
 npm start
+```
 
-### Folder Structure
+## Folder Structure
+```
 │
 ├─ public/          # 🌐 Static files (CSS, JS, images)
 ├─ views/           # 🖼️ EJS templates
@@ -64,3 +65,4 @@ npm start
 ├─ app.js           # 🚪 Entry point
 ├─ package.json     # 📦 Dependencies and scripts
 └─ README.md        # 📖 Project documentation
+```
