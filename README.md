@@ -54,6 +54,7 @@ cd my-cms
 npm install
 npm start
 
+### Folder Structure
 │
 ├─ public/          # 🌐 Static files (CSS, JS, images)
 ├─ views/           # 🖼️ EJS templates
