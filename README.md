@@ -29,7 +29,7 @@ With **Express** and **EJS**, My CMS provides a fast and intuitive way to manage
 - **Full Control**  
   You own your content and the system. No unnecessary dependencies or complexity.
 
----
+
 
 ## Tech Stack
 
@@ -41,8 +41,6 @@ Optional dependencies for future features:
 - `body-parser` for handling form submissions  
 - `express-session` for session management  
 - `mongoose` or any database of choice for persistent storage  
-
----
 
 ## Installation
 git clone https://github.com/yourusername/my-cms.git
