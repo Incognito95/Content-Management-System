@@ -35,9 +35,9 @@ With **Express** and **EJS**, My CMS provides a fast and intuitive way to manage
 
 ## 🛠️ Tech Stack
 
-- **🟢 Node.js** – Server-side JavaScript runtime  
-- **🚂 Express.js** – Fast, minimal web framework  
-- **📄 EJS** – Embedded JavaScript templating for rendering dynamic content  
+- 🟢 Node.js** – Server-side JavaScript runtime  
+- 🚂 Express.js** – Fast, minimal web framework  
+- 📄 EJS** – Embedded JavaScript templating for rendering dynamic content  
 
 Optional dependencies for future features:  
 - `📦 body-parser` for handling form submissions  
