@@ -1,77 +1,100 @@
 <%- include('./partials/header') %>
 
-    <div class="container mt-5">
-        <div class="p-5 mb-4 jumbotron rounded-3 text-light">
-            <div class="container-fluid py-4">
-                <h1 class="heading">Content Management System</h1>
-                <p class="subtext">A simple CMS built with Node.js, Express and EJS — <strong>focused on clarity and
-                        speed.</strong></p>
-                <p class="subtext">Built for speed and clarity.</p>
-                <p class="subtext">Customize quickly and deploy with confidence.</p>
+    <!---- hero section -->
+    <section class="py-5 hero-section text-white">
+        <div class="container pb-5 pt-5">
+            <div class="pb-5 pt-5 row">
+                <div class="col-lg-9 col-xl-8 ms-auto me-auto pb-5 pt-5">
+                    <!-- Eyebrow / small label -->
+                    <span class="text-uppercase fw-semibold">
+                        Custom Express & EJS CMS
+                    </span>
+
+                    <!-- Main headline -->
+                    <h1 class="display-3 fw-bold mb-3">
+                        A Lightweight CMS
+                    </h1>
+
+                    <!-- Supporting description -->
+                    <p class="lead mb-4">
+                        A self-made content management system built with Express.js and EJS,
+                        <br>focused on flexibility, performance, and full control over your content.
+                    </p>
+
+                    <!-- Primary CTA -->
+                    <a class="btn explore-docs-btn text-white btn-lg" href="/docs">
+                        Explore the CMS
+                    </a>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="py-4">
-            <h2 class="pb-2 border-bottom">Features</h2>
-            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+    <!---- features section -->
+    <div class="container px-4 py-5" id="featured-3">
+        <h1 class="pb-2 text-center">Features</h1>
+        <div class="row g-4 py-5 row-cols-1 row-cols-md-3">
 
-                <div class="col">
-                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                        style="background-image: url('https://getbootstrap.com/docs/5.3/examples/features/unsplash-photo-1.jpg'); background-size: cover; background-position: center">
-                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Easy Content Creation</h3>
-                            <ul class="d-flex list-unstyled mt-auto">
-                                <li class="me-auto">
-                                    <img src="https://github.com/twbs.png" alt="CMS UI" width="32" height="32"
-                                        class="rounded-circle border border-white">
-                                </li>
-                                <li class="d-flex align-items-center me-3">
-                                    <small>CMS Interface</small>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+            <!-- Feature 1 -->
+            <div class="feature col text-center">
+                <div class="mb-3">
+                    <i class="bi bi-lightning-charge fs-1 text-primary"></i>
                 </div>
-
-                <div class="col">
-                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                        style="background-image: url('https://getbootstrap.com/docs/5.3/examples/features/unsplash-photo-2.jpg'); background-size: cover; background-position: center">
-                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Customizable Pages</h3>
-                            <ul class="d-flex list-unstyled mt-auto">
-                                <li class="me-auto">
-                                    <img src="https://github.com/twbs.png" alt="Customize" width="32" height="32"
-                                        class="rounded-circle border border-white">
-                                </li>
-                                <li class="d-flex align-items-center">
-                                    <small>Flexible Layouts</small>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                        style="background-image: url('https://getbootstrap.com/docs/5.3/examples/features/unsplash-photo-3.jpg'); background-size: cover; background-position: center">
-                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Developer‑Friendly</h3>
-                            <ul class="d-flex list-unstyled mt-auto">
-                                <li class="me-auto">
-                                    <img src="https://github.com/twbs.png" alt="Dev Friendly" width="32" height="32"
-                                        class="rounded-circle border border-white">
-                                </li>
-                                <li class="d-flex align-items-center">
-                                    <small>Built With Express & EJS</small>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
+                <h5 class="fw-bold">Fast Rendering</h5>
+                <p class="text-muted">Express + EJS deliver minimal overhead and lightning‑fast page loads.</p>
             </div>
-        </div>
 
+            <!-- Feature 2 -->
+            <div class="feature col text-center">
+                <div class="mb-3">
+                    <i class="bi bi-pencil-square fs-1 text-primary"></i>
+                </div>
+                <h5 class="fw-bold">Easy Content Editing</h5>
+                <p class="text-muted">Manage posts and pages with a clean, intuitive interface for editors and
+                    developers.</p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature col text-center">
+                <div class="mb-3">
+                    <i class="bi bi-sliders fs-1 text-primary"></i>
+                </div>
+                <h5 class="fw-bold">Flexible Customization</h5>
+                <p class="text-muted">Extend routes, add templates, and adjust components without restrictions.</p>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="feature col text-center">
+                <div class="mb-3">
+                    <i class="bi bi-code-slash fs-1 text-primary"></i>
+                </div>
+                <h5 class="fw-bold">Developer Friendly</h5>
+                <p class="text-muted">Leverage Node.js modules and middleware to integrate APIs or add new features
+                    quickly.</p>
+            </div>
+
+            <!-- Feature 5 -->
+            <div class="feature col text-center">
+                <div class="mb-3">
+                    <i class="bi bi-palette fs-1 text-primary"></i>
+                </div>
+                <h5 class="fw-bold">Theme Control</h5>
+                <p class="text-muted">Customize layouts, colors, and styles directly in EJS templates for full design
+                    freedom.</p>
+            </div>
+
+            <!-- Feature 6 -->
+            <div class="feature col text-center">
+                <div class="mb-3">
+                    <i class="bi bi-type fs-1 text-primary"></i>
+                </div>
+                <h5 class="fw-bold">Dynamic Templates</h5>
+                <p class="text-muted">Use EJS partials and includes to keep views modular, reusable, and easy to
+                    maintain.</p>
+            </div>
+
+        </div>
     </div>
+
 
     <%- include('./partials/footer') %>

@@ -1,15 +1,19 @@
 .navbar {
-    background-color: #09172B;
-}
-
-.jumbotron {
-    background-color: #09172B;
+    background-color: #050e13;
 }
 
 .signup-btn,
 .signup-btn:hover,
 .logout-btn,
-.logout-btn:hover {
+.logout-btn:hover,
+.explore-docs-btn,
+.explore-docs-btn:hover {
     background-color: #E20000;
     border: none;
+}
+
+.hero-section {
+    background-image: url("/images/hero-image.jpg");
+    background-size: cover;
+    background-position: center;
 }
